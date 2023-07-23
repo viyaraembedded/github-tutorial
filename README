@@ -1,0 +1,30 @@
+github testing repo for pushing paches
+
+git clone https://github.com/viyaraembedded/test.git
+
+-------------------------
+for New Repo
+--------------------------
+echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/viyaraembedded/test.git
+git push -u origin main
+
+-----------------------
+for existing Repo
+-----------------------
+git remote add origin https://github.com/viyaraembedded/test.git
+git branch -M main
+git push -u origin main
+
+Note: github password can not work for git push, so use Personal access tocken from gihub
+1. create github account
+2. goto settings -> developer settings -> select tocken
+	notes: git push tocken
+	Expiration : select no expiration
+	Select scopes: all
+3. copy the key and paste in git push
+
